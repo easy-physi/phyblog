@@ -106,15 +106,15 @@ class Footer extends React.Component {
         </section>
 
         <a
-          href="https://opensource.facebook.com/"
+          href="https://creativecommons.org/"
           target="_blank"
           rel="noreferrer noopener"
           className="fbOpenSource">
           <img
-            src={`${this.props.config.baseUrl}img/oss_logo.png`}
-            alt="Facebook Open Source"
-            width="170"
-            height="45"
+            src={`${this.props.config.baseUrl}img/by-nc-sa.svg`}
+            alt="Creative Commons-BY-NC-SA"
+            width="176"
+            height="62"
           />
         </a>
         <section className="copyright">{this.props.config.copyright}</section>
