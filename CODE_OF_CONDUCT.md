@@ -46,4 +46,4 @@ If you believe someone is violating the code of conduct, we ask that you report 
 Sometimes, participants violating the Code of Conduct are unaware that their behavior is harmful, and an open conversation clears things up to move forward. However, if a participant continues with the behavior, the Easy-Physi team may take any action they deem appropriate, up to and including expulsion from all Easy-Physi spaces and identification of the participant as a harasser to other Easy-Physi members or the general public.
 
 ---
-This statement is licensed under a [Creative Commons license](https://creativecommons.org/licenses/by-sa/4.0/). Please feel free to share and remix with attribution.
+This statement is licensed under a [Creative Commons license](https://creativecommons.org/licenses/by-sa/4.0/). This code of conduct has been borrowed from the wonderful [p5js.org](https://github.com/processing/p5.js/blob/3750996/CODE_OF_CONDUCT.md) project and slightly modified wherever needed to suit the purposes of this project. Please feel free to share and remix with attribution.
