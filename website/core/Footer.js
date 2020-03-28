@@ -21,6 +21,19 @@ class Footer extends React.Component {
     return baseUrl + (language ? `${language}/` : '') + doc;
   }
 
+  githubUrl(doc, branch="master") {
+    const repo = "phyblog/";
+    const baseUrl = `https://github.com/${this.props.config.organizationName}/${repo}`;
+    if(!doc) return baseUrl;
+    const index = doc.indexOf(".");
+    const isFile = index !== -1 && index !== 0;
+    return isFile? `${baseUrl}blob/${branch}/${doc}`: `${baseUrl}tree/${branch}/${doc}`;
+  }
+
+  githubTab(tab) {
+    return this.githubUrl() + tab;
+  }
+
   render() {
     return (
       <footer className="nav-footer" id="footer">
@@ -36,23 +49,21 @@ class Footer extends React.Component {
             )}
           </a>
           <div>
-            <h5>Docs</h5>
-            <a href={this.docUrl('doc1.html', this.props.language)}>
-              Getting Started (or other categories)
+            <h5>Participate</h5>
+            <a href={this.githubUrl("contributing.md")}>
+              Contribute an article
             </a>
-            <a href={this.docUrl('doc2.html', this.props.language)}>
-              Guides (or other categories)
-            </a>
-            <a href={this.docUrl('doc3.html', this.props.language)}>
-              API Reference (or other categories)
+            <a href={this.githubTab("issues")}>
+              Report a problem
             </a>
           </div>
           <div>
             <h5>Community</h5>
+            <a href={this.githubUrl()}>GitHub</a>
             <a href={this.pageUrl('users.html', this.props.language)}>
               User Showcase
             </a>
-            <a
+            {/* <a
               href="https://stackoverflow.com/questions/tagged/"
               target="_blank"
               rel="noreferrer noopener">
@@ -64,13 +75,15 @@ class Footer extends React.Component {
               target="_blank"
               rel="noreferrer noopener">
               Twitter
-            </a>
+            </a> */}
           </div>
           <div>
             <h5>More</h5>
-            <a href={`${this.props.config.baseUrl}blog`}>Blog</a>
-            <a href="https://github.com/">GitHub</a>
-            <a
+            <a href={this.githubUrl("CODE_OF_CONDUCT.md")}>
+              Code of conduct
+            </a>
+            <a href={this.githubUrl("license.md")}>Terms of use</a>
+            {/* <a
               className="github-button"
               href={this.props.config.repoUrl}
               data-icon="octicon-star"
@@ -79,7 +92,7 @@ class Footer extends React.Component {
               data-count-aria-label="# stargazers on GitHub"
               aria-label="Star this project on GitHub">
               Star
-            </a>
+            </a> */}
             {this.props.config.twitterUsername && (
               <div className="social">
                 <a
