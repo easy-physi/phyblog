@@ -50,7 +50,7 @@ class Footer extends React.Component {
           </a>
           <div>
             <h5>Participate</h5>
-            <a href={this.githubUrl("contributing.md")}>
+            <a href={this.docUrl("prepare_post")}>
               Contribute an article
             </a>
             <a href={this.githubTab("issues")}>

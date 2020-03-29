@@ -3,6 +3,7 @@ id: prepare_post
 title: Preparing a Blog Post
 ---
 
+
 ### Step 1: Fork repo
 If you are someone who wants to contribute an article to this blog then first
 start by forking this repo by clicking on the Fork button.
@@ -51,6 +52,9 @@ Not this.
 
 Or this.
 ```
+If you are new to formatting text with markdown it is strongly recommended that
+you read our [markdown wiki](https://github.com/easy-physi/phyblog/wiki/Getting-started-with-Markdown)
+first before continuing.
 
 ### Step 4: Add static assests
 You can even add images to your post. Create a folder under `website/static/img/`
