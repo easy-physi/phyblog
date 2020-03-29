@@ -82,7 +82,7 @@ class Footer extends React.Component {
             <a href={this.githubUrl("CODE_OF_CONDUCT.md")}>
               Code of conduct
             </a>
-            <a href={this.githubUrl("license.md")}>Terms of use</a>
+            <a href={this.githubUrl("license.txt")}>Terms of use</a>
             {/* <a
               className="github-button"
               href={this.props.config.repoUrl}
@@ -125,7 +125,7 @@ class Footer extends React.Component {
           className="fbOpenSource">
           <img
             src={`${this.props.config.baseUrl}img/by-nc-sa.svg`}
-            alt="Creative Commons-BY-NC-SA"
+            alt="Creative Commons-BY-NC-SA 4.0"
             width="176"
             height="62"
           />

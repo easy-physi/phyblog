@@ -1,9 +1,4 @@
----
-id: community
-title: Code of Conduct
----
-
-## [Easy-Physi community statement](https://easy-physi.github.io/docs/community)
+## Easy-Physi community statement
 
 Easy-Physi is a community interested in exploring the subject in easy to understand words.
 
